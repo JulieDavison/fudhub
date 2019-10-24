@@ -1,0 +1,57 @@
+body{
+    background: #fce77d;
+    
+}
+.container{
+    left: 50%;
+}
+.fud {
+    background: #fce77d;
+    color: #f96167;
+    text-align: center;
+    border: 10px solid #f96167;
+    width: 115px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 43%;
+    text-shadow: 2px 2px #fd8589;
+    margin-top: 2%;
+    
+}
+
+#top {
+    margin-bottom: -23px;
+}
+h3{
+    font-size: 40px;
+}
+
+.icons{
+    margin-left: 44%;
+    margin-top: 3%;
+}
+.icons img{
+    height: 40px;
+    width: 40px;
+    
+}
+h4{
+    font-size: 12px;
+    margin-left: 43.2%;
+    margin-top: 25px;
+    
+}
+
+.start{
+    border: 1px solid #f96167;
+    background: #f96167;
+    color: #fce77d;
+    padding: 3px;
+    width: 90px;
+    margin: 15px;
+    border-radius: 2px;
+    margin-left: 46.7%;
+    margin-top: 3.5%;
+    text-align: center;
+    font-size: 14px;
+}
