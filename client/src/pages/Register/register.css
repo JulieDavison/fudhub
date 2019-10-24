@@ -1,0 +1,107 @@
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fce77d;
+}
+.fud {
+    background: #fce77d;
+    color: #f96167;
+    text-align: center;
+    border: 10px solid #f96167;
+    width: 115px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 43%;
+    text-shadow: 2px 2px #fd8589;
+    margin-top: 2%;
+    
+}
+
+#top {
+    margin-bottom: -23px;
+}
+.regbox {
+    width: 320px;
+    height: 550px;
+    background: whitesmoke;
+    box-shadow: 2px 2px #fd8589;
+    color: #f96167;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    opacity: .85;
+    border-radius: 1px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid#f96167;
+    margin-top: 10.8%;
+    margin-bottom: 3%;
+
+}
+
+
+.regbox h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.regbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.regbox input {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.regbox input[type="text"],
+input[type="password"] {
+    border: 1px solid lightgray;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.regbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #f96167;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 1px;
+    margin-top: 30px;
+}
+
+.regbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.regbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.regbox a:hover {
+    color: #ffc107;
+}

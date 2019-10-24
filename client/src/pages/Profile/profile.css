@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fce77d;
+}
+
+.container {
+    border: 2px solid#f96167;
+    box-shadow: 5px 5px #fd8589;
+    background: whitesmoke;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    margin-left: 25%;
+    margin-top: 10%;
+    font-family: "raleway";
+}
+
+img{
+    height: 30px;
+    width: 30px;
+    margin-top: 5%;
+}
+
+.b1 p{
+    border: 1px solid lightseagreen;
+    background: lightseagreen;
+    color: whitesmoke;
+    box-shadow: 2px 2px lightgray;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 34%;
+    margin-top: 5%;
+    
+}
+

@@ -6,7 +6,7 @@ import SignIn from "./pages/SignIn";
 import Profile from "./pages/Profile";
 import Budget from "./pages/Budget";
 import FoodChoice from "./pages/FoodChoice";
-import FoodResults from "./pages/FoodResults";
+
 import * as routes from "./routes";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route exact path={routes.Profile} component= {Profile}/>
           <Route exact path={routes.Budget} component= {Budget}/>
           <Route exact path={routes.FoodChoice} component= {FoodChoice}/>
-          <Route exact path={routes.FoodResults} component= {FoodResults}/>
+          
         </Switch>
       </div>
     </Router>
