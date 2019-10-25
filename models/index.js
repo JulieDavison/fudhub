@@ -1,5 +1,6 @@
 module.exports = {
     Recipe: require("./recipes"),
-    Restaurant: require("./restaurants")
+    Restaurant: require("./restaurants"),
+    Category: require("./category")
   };
   
