@@ -6,6 +6,7 @@ import SignIn from "./pages/SignIn";
 import Profile from "./pages/Profile";
 import Budget from "./pages/Budget";
 import FoodChoice from "./pages/FoodChoice";
+import RecipeResults from "./pages/RecipeResults";
 
 import * as routes from "./routes";
 
@@ -19,9 +20,11 @@ function App() {
           <Route exact path={routes.Profile} component= {Profile}/>
           <Route exact path={routes.Budget} component= {Budget}/>
           <Route exact path={routes.FoodChoice} component= {FoodChoice}/>
+          <Route exact path={routes.RecipeResults} component= {RecipeResults}/>
       </div>
     </Router>
   );
 }
 
 export default App;
+
