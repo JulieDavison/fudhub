@@ -1,8 +1,8 @@
-const router = require("express").Router();
-const foodController = require("../../controllers/foodController");
+// const router = require("express").Router();
+// const foodController = require("../../controllers/foodController");
 
-router.route("/")
-  .get(foodController.findAll)
-  .post(foodController.create);
+// router.route("/")
+//   .get(foodController.findAll)
+//   .post(foodController.create);
 
-module.exports = router;
+// module.exports = router;

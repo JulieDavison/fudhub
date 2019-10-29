@@ -5,3 +5,4 @@ export const Profile = '/profile';
 export const Budget = '/budget';
 export const FoodChoice = '/foodchoice';
 export const FoodResults = '/foodresults';
+export const RecipeResults = '/reciperesults';
