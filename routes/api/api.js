@@ -1,9 +1,9 @@
+
 // const router = require("express").Router();
 // const axios = require("axios");
 // // //API Key goes here
 // // const BASEURL = "https://api.spoonacular.com/recipes/search?query=";
 // // const APIKEY = process.env.APIKEY;
-
 
 //   // Gets all food
 //  router.get("/food/:query", function (req, res) {
