@@ -2,7 +2,7 @@ const router = require("express").Router();
 const axios = require("axios");
 //API Key goes here
 const BASEURL = "https://api.spoonacular.com/recipes/search?query=";
-const APIKEY = process.env.APIKEY;
+const APIKEY = "bd07c7da7c734450a96b431eb53a3f93";
 
 
   // Gets all food
