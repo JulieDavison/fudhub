@@ -1,7 +1,7 @@
-const router = require("express").Router();
-const foodRoutes = require("./api.js");
+// const router = require("express").Router();
+// const foodRoutes = require("./api.js");
 
-// Food routes
-router.use("/api.js", foodRoutes);
+// // Food routes
+// router.use("/api.js", foodRoutes);
 
-module.exports = router;
+// module.exports = router;
