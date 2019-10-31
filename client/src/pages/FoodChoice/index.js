@@ -42,7 +42,7 @@ class FoodChoice extends Component {
     };
 
     loadNextFood = () => {
-        let rand = Math.floor((Math.random() * Images.length));
+        let rand = Math.floor((Math.random() * Images.length + 1));
         let currentImage = Images[rand].image;
         let food = Images[rand].food
         console.log(food)
@@ -60,7 +60,6 @@ class FoodChoice extends Component {
                         handleBtnClick={this.handleBtnClick}
                         id = {this.state.currentIndex}
                         food = {this.state.food}
-
                     />
             </Container>
 
