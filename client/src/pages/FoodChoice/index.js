@@ -6,7 +6,7 @@ import Container from "../../components/Container"
 
 class FoodChoice extends Component {
     state = {
-        images: "",
+        image: "",
         food: "",
         currentIndex: 0,
         match: false,
@@ -47,7 +47,7 @@ class FoodChoice extends Component {
         let food = Images[rand].food
         console.log(food)
         this.setState({currentIndex : rand})
-        this.setState({images: currentImage})
+        this.setState({image: currentImage})
         this.setState({food: food})
     };
 
@@ -56,7 +56,7 @@ class FoodChoice extends Component {
         return (
             <Container>
                     <Card
-                        image={this.state.images} 
+                        image={this.state.image} 
                         handleBtnClick={this.handleBtnClick}
                         id = {this.state.currentIndex}
                         food = {this.state.food}
