@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import Jumbotron from "./components/Jumbotron";
-import Nav from "../../components/Nav";
+// import Nav from "../../components/Nav";
 import Input from "../../components/Input";
 // import Button from "./components/Button";
 import API from "../../utils/API";

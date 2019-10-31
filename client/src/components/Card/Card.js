@@ -10,6 +10,7 @@ function Card(props) {
         backgroundImage: props.image ? `url(${props.image})` : "none"
       }}
     >
+      <div className="foodName"> {props.food}</div>
       {!props.image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
       <CardBtn
         style={{ opacity: props.image ? 1 : 0 }}

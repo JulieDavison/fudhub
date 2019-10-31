@@ -1,74 +1,69 @@
 import React, { Component } from "react";
 import Card from "../../components/Card";
-import images from "./images.json";
+import Images from "./images.json";
 import Container from "../../components/Container"
 
 
 class FoodChoice extends Component {
     state = {
-        images,
+        images: "",
+        food: "",
+        currentIndex: 0,
         match: false,
         matchCount: 0
     };
 
-    
-    componentDidMount() {
-        this.setState({ images: this.loadNextFood(this.state.images) });
+
+    componentDidMount() { 
+        this.loadNextFood();
     }
 
     handleBtnClick = event => {
-        
+
         const btnType = event.target.attributes.getNamedItem("data-value").value;
-       
+
         const newState = { ...this.state };
 
         if (btnType === "pick") {
-            
+
             newState.match = 1 === Math.floor(Math.random() * 1) + 1;
 
-            
+
             newState.matchCount = newState.match
                 ? newState.matchCount + 1
                 : newState.matchCount;
         } else {
-            
+
             newState.match = false;
         }
-        
+
         this.setState(newState);
         this.loadNextFood();
     };
 
     loadNextFood = () => {
-        const j = images.length +1;
-        const rand = Math.floor ((Math.random() * j.length));
-        
-        
-        return images;
-      };
-    
+        let rand = Math.floor((Math.random() * Images.length));
+        let currentImage = Images[rand].image;
+        let food = Images[rand].food
+        console.log(food)
+        this.setState({currentIndex : rand})
+        this.setState({images: currentImage})
+        this.setState({food: food})
+    };
+
 
     render() {
         return (
             <Container>
-                  {this.state.images.map((e,i) =>
                     <Card
-                    image={e.image} handleBtnClick={this.handleBtnClick}
-                    food={e.food}
-                    id = {e.id}
-                    key={i}
-                    
-                    />
-                    
-                )}
-                <h1 className="text-center">
-            
-          green button counter {this.state.matchCount}
-        </h1>
+                        image={this.state.images} 
+                        handleBtnClick={this.handleBtnClick}
+                        id = {this.state.currentIndex}
+                        food = {this.state.food}
 
-                
+                    />
             </Container>
-         
+
 
         );
     }
