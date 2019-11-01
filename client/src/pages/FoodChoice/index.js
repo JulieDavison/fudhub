@@ -10,11 +10,11 @@ class FoodChoice extends Component {
         food: "",
         currentIndex: 0,
         match: false,
-        matchCount: 0
+        matchCount: 0,
+        tempArray: Images
     };
 
-
-    componentDidMount() { 
+    componentDidMount() {
         this.loadNextFood();
     }
 
@@ -41,26 +41,49 @@ class FoodChoice extends Component {
         this.loadNextFood();
     };
 
+    shuffle = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
     loadNextFood = () => {
-        let rand = Math.floor((Math.random() * Images.length + 1));
-        let currentImage = Images[rand].image;
-        let food = Images[rand].food
-        console.log(food)
-        this.setState({currentIndex : rand})
-        this.setState({image: currentImage})
-        this.setState({food: food})
+        if (this.state.currentIndex >= this.state.tempArray.length) {
+            let shuffleArray = this.shuffle(this.state.tempArray)
+            this.setState({tempArray: shuffleArray})
+            let currentIndex = 0;
+            let currentImage = this.state.tempArray[currentIndex].image;
+            let currentFood = this.state.tempArray[currentIndex].food;
+            currentIndex++;
+            this.setState({ image: currentImage });
+            this.setState({ food: currentFood });
+            this.setState({ currentIndex: currentIndex });
+        }
+        else {
+            let currentIndex = this.state.currentIndex;
+            let currentImage = this.state.tempArray[currentIndex].image;
+            let currentFood = this.state.tempArray[currentIndex].food;
+            currentIndex++;
+            this.setState({ image: currentImage });
+            this.setState({ food: currentFood });
+            this.setState({ currentIndex: currentIndex });
+        }
+        console.log(this.state.tempArray)
+
     };
 
 
     render() {
         return (
             <Container>
-                    <Card
-                        image={this.state.image} 
-                        handleBtnClick={this.handleBtnClick}
-                        id = {this.state.currentIndex}
-                        food = {this.state.food}
-                    />
+                <Card
+                    image={this.state.image}
+                    handleBtnClick={this.handleBtnClick}
+                    id={this.state.currentIndex}
+                    food={this.state.food}
+                />
             </Container>
 
 
