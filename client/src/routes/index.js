@@ -6,3 +6,4 @@ export const Budget = '/budget';
 export const FoodChoice = '/foodchoice';
 export const FoodResults = '/foodresults';
 export const RecipeResults = '/reciperesults';
+export const YelpResults = '/yelpresults';
