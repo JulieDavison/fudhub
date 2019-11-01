@@ -8,17 +8,16 @@ import API from "../../utils/API";
 
 class FoodChoice extends Component {
     state = {
-        images: "",
+        image: "",
         food: "",
         currentIndex: 0,
         match: false,
         matchCount: 0,
-    recipeSearch: ""
+        tempArray: Images
 
     };
 
-
-    componentDidMount() { 
+    componentDidMount() {
         this.loadNextFood();
     }
 
@@ -51,14 +50,37 @@ class FoodChoice extends Component {
     
     
 
+    shuffle = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
     loadNextFood = () => {
-        let rand = Math.floor((Math.random() * Images.length));
-        let currentImage = Images[rand].image;
-        let food = Images[rand].food
-        console.log(food)
-        this.setState({currentIndex : rand})
-        this.setState({images: currentImage})
-        this.setState({food: food})
+        if (this.state.currentIndex >= this.state.tempArray.length) {
+            let shuffleArray = this.shuffle(this.state.tempArray)
+            this.setState({tempArray: shuffleArray})
+            let currentIndex = 0;
+            let currentImage = this.state.tempArray[currentIndex].image;
+            let currentFood = this.state.tempArray[currentIndex].food;
+            currentIndex++;
+            this.setState({ image: currentImage });
+            this.setState({ food: currentFood });
+            this.setState({ currentIndex: currentIndex });
+        }
+        else {
+            let currentIndex = this.state.currentIndex;
+            let currentImage = this.state.tempArray[currentIndex].image;
+            let currentFood = this.state.tempArray[currentIndex].food;
+            currentIndex++;
+            this.setState({ image: currentImage });
+            this.setState({ food: currentFood });
+            this.setState({ currentIndex: currentIndex });
+        }
+        console.log(this.state.tempArray)
+
     };
 
 
@@ -66,14 +88,15 @@ class FoodChoice extends Component {
         return (
             
             <Container>
-                <Nav/>
-                    <Card
-                        image={this.state.images} 
-                        handleBtnClick={this.handleBtnClick}
-                        id = {this.state.currentIndex}
-                        food = {this.state.food}
 
-                    />
+                <Nav/>
+                <Card
+                    image={this.state.image}
+                    handleBtnClick={this.handleBtnClick}
+                    id={this.state.currentIndex}
+                    food={this.state.food}
+                />
+
             </Container>
 
 
