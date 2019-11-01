@@ -1,10 +1,10 @@
 .card-btn {
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     position: absolute;
     border: none;
-    bottom: 10%;
+    bottom: 2%;
     color: black;
     font-size: 24px;
     cursor: pointer;

@@ -1,32 +1,32 @@
 [
     {
         "id":0,
-        "food":"burger",
+        "food":"BURGER",
         "image": "https://www.waiter.com/blog/wp-content/uploads/2015/06/hamburger.jpg"
     },
     {
         "id":1,
-        "food":"hotdog",
-        "image":"https://www.dairyqueen.com/Global/Food/Hot-Dogs_8-to-1_470x500.jpg?width=&height=810"
+        "food":"HOT DOG",
+        "image":"https://images.unsplash.com/photo-1537790698196-aad88bf9bb27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
     },
     {
         "id":2,
-        "food":"padthai",
+        "food":"PAD THAI",
         "image":"https://www.feastingathome.com/wp-content/uploads/2016/04/easy-authentic-pad-thai-recipe-100.jpg"
     },
     {
         "id":3,
-        "food":"sushi",
-        "image":"https://www.thespruceeats.com/thmb/IyxiJdbwFaixy4iolNYTLjBmW_w=/4288x2848/filters:fill(auto,1)/kimbap-korean-sushi-rolls-2118795-Hero-5b7dbdd346e0fb00250718b8.jpg"
+        "food":"SUSHI",
+        "image":"https://mauiinn.com/wp-content/uploads/2017/12/best-sushi-on-maui.jpg"
     },
     {
         "id":4,
-        "food":"spaghetti",
+        "food":"SPAGHETTI",
         "image":"https://www.seriouseats.com/2019/08/20190809-burst-tomato-xo-pasta-vicky-wasik21--1500x1125.jpg"
     },
     {
         "id":5,
-        "food":"pizza",
+        "food":"PIZZA",
         "image":"https://www.simplyrecipes.com/wp-content/uploads/2019/09/easy-pepperoni-pizza-lead-4.jpg"
     }
 ]
