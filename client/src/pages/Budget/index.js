@@ -12,7 +12,7 @@ function Budget(){
         <div className="row">
             <div className="col-md-6">
                     <label >
-                            <input type="checkbox" checked="checked"></input>
+                            <input type="checkbox"></input>
                             <span className="checkmark">restaurants</span>
                         </label>
             </div>

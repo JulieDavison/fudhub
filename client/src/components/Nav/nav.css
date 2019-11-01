@@ -1,0 +1,23 @@
+.nahv{
+    width: 116%;
+    margin-left:-8%;
+    margin-right: -40%;
+    color: rgb(247, 247, 247);
+}
+
+.fud{
+    color: #f96167;
+    font-size: 30px;
+    text-shadow: 2px 2px #fd8589;
+    font-family: 'Bungee Inline', cursive
+
+    
+}
+.fud:hover{
+    color: rgb(253, 253, 170);;
+    text-decoration:none
+}
+
+#butts {
+    color: #f96167;
+}

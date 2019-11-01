@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Card from "../../components/Card";
 import Images from "./images.json";
 import Container from "../../components/Container"
+import Nav from "../../components/Nav";
+import API from "../../utils/API";
 
 
 class FoodChoice extends Component {
@@ -12,6 +14,7 @@ class FoodChoice extends Component {
         match: false,
         matchCount: 0,
         tempArray: Images
+
     };
 
     componentDidMount() {
@@ -24,7 +27,9 @@ class FoodChoice extends Component {
 
         const newState = { ...this.state };
 
-        if (btnType === "pick") {
+
+
+        if (btnType === "pass") {
 
             newState.match = 1 === Math.floor(Math.random() * 1) + 1;
 
@@ -32,14 +37,18 @@ class FoodChoice extends Component {
             newState.matchCount = newState.match
                 ? newState.matchCount + 1
                 : newState.matchCount;
-        } else {
-
+                this.setState(newState);
+                this.loadNextFood();
+        } 
+        else {
+            
             newState.match = false;
         }
 
-        this.setState(newState);
-        this.loadNextFood();
+        
     };
+    
+    
 
     shuffle = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -77,13 +86,17 @@ class FoodChoice extends Component {
 
     render() {
         return (
+            
             <Container>
+
+                <Nav/>
                 <Card
                     image={this.state.image}
                     handleBtnClick={this.handleBtnClick}
                     id={this.state.currentIndex}
                     food={this.state.food}
                 />
+
             </Container>
 
 
