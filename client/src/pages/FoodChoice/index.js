@@ -12,8 +12,6 @@ class FoodChoice extends Component {
         image: "",
         food: "",
         currentIndex: 0,
-        match: false,
-        matchCount: 0,
         tempArray: Images
 
     };

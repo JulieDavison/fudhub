@@ -12,6 +12,7 @@ function Register() {
 
        <div className="regbox">
 
+
            <h1>Register Now!</h1>
            <form action="">
                <p>
@@ -31,6 +32,7 @@ function Register() {
                <input type="submit" name="" value="Login" id="submit"></input>
                <a href="/register.html">Don't have an account? Sign up
                now!</a>
+
 
            </form>
        </div>

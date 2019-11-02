@@ -2,9 +2,34 @@ import React, { Component } from "react";
 import Container from "../../components/Container";
 import Nav from "../../components/Nav";
 import "./yelp.css"
+require("dotenv").config();
 
-function YelpResults() {
-    return (
+'use strict';
+
+const yelp = require('yelp-fusion');
+
+
+class Yelp extends Component {
+    runAPI() {
+        const apiKey = process.env.yelpAPI;
+        const searchRequest = {
+            term: "burger",
+            location: "orange county",
+            price: "1",
+
+        };
+        const client = yelp.client(apiKey);
+        client.search(searchRequest).then(response => {
+            const firstResult = response.jsonBody.businesses[0];
+            const prettyJson = JSON.stringify(firstResult, null, 4);
+            console.log(prettyJson);
+        }).catch(e => {
+            console.log(e);
+        });
+    }
+    render() {
+        return (
+               return (
         <Container>
             <Nav />
             <div className="bg2">
@@ -59,7 +84,9 @@ Sun
             </div>
            
         </Container>
+
     );
+  }
 }
 
 export default YelpResults;
