@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-  getFood: function() {
-    return axios.get("/api/food");
+  saveFood: function() {
+    return axios.post("/api/food")
   }
 };

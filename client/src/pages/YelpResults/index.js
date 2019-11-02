@@ -1,12 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 require("dotenv").config();
-
-'use strict';
 
 const yelp = require('yelp-fusion');
 
-
-class Yelp extends Component {
+class YelpResults extends Component {
     runAPI() {
         const apiKey = process.env.yelpAPI;
         const searchRequest = {

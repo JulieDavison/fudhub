@@ -14,12 +14,12 @@ function Card(props) {
       {!props.image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
       <CardBtn
         style={{ opacity: props.image ? 1 : 0 }}
-        onClick={props.handleBtnClick}
+        onClick={props.loadNextFood}
         data-value="pass"
       />
       <CardBtn
         style={{ opacity: props.image ? 1 : 0 }}
-        onClick={props.handleBtnClick}
+        onClick={props.pickFood}
         data-value="pick"
       />
     </div>
