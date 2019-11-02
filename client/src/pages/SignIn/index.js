@@ -14,11 +14,11 @@ function SignIn(){
                 <h1>Login Here</h1>
                 <form action="">
                     <p>
-                        <img src="/images/user.png" style={{height:'12px',width:'12px', marginright:'5px'}}></img>E-mail</p>
+                        <img src="/images/user.png" alt="login" style={{height:'12px',width:'12px', marginright:'5px'}}></img>E-mail</p>
                     <input type="text" name="" placeholder="Enter E-mail" id="email"></input>
     
                     <p>
-                        <img src="/images/pass.ico" style={{height:'12px',width:'12px'}}></img>
+                        <img src="/images/pass.ico" alt="password" style={{height:'12px',width:'12px'}}></img>
                         Password</p>
                     <input type="password" name="" placeholder="Enter Password" id="password"></input>
                     <input type="submit" name="" value="Login" id="submit"></input>

@@ -33,8 +33,6 @@ class RecipeResults extends Component {
   render() {
     return (
       <div>
-        {/* <Nav /> */}
-       
         <Container>
           <Row>
             <Col size="md-12">

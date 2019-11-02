@@ -4,6 +4,7 @@ import "./budget.css";
 function Budget(){
     return (
         <div className="container">
+        <form>
         <h2>Step 1:</h2>
         <h3>Budget</h3>
         <input type="text" name="" placeholder="Enter Amount" id="budget"></input>
@@ -12,7 +13,7 @@ function Budget(){
         <div className="row">
             <div className="col-md-6">
                     <label >
-                            <input type="checkbox" checked="checked"></input>
+                            <input type="checkbox"></input>
                             <span className="checkmark">restaurants</span>
                         </label>
             </div>
@@ -26,11 +27,11 @@ function Budget(){
             </div>
         </div>
         <div className="search">
-            <p>start</p>
+        <input type="submit" value="Submit"></input>
         </div>
+        </form>
+        
     </div>
-
     );
 }
-
 export default Budget;
