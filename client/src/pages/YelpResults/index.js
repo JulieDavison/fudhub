@@ -1,6 +1,9 @@
 import React from "react";
 require("dotenv").config();
 
+'use strict';
+
+const yelp = require('yelp-fusion');
 
 
 class Yelp extends Component {
