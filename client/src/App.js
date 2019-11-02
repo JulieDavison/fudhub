@@ -21,6 +21,7 @@ function App() {
           <Route exact path={routes.Budget} component= {Budget}/>
           <Route exact path={routes.FoodChoice} component= {FoodChoice}/>
           <Route exact path={routes.RecipeResults} component= {RecipeResults}/>
+          <Route exact path={routes.YelpResults} component= {YelpResults}/>
       </div>
     </Router>
   );
