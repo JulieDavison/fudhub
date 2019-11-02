@@ -4,6 +4,7 @@ import Images from "./images.json";
 import Container from "../../components/Container"
 import Nav from "../../components/Nav";
 import API from "../../utils/API";
+import "../FoodChoice/choice.css"
 
 
 class FoodChoice extends Component {
@@ -90,6 +91,13 @@ class FoodChoice extends Component {
             <Container>
 
                 <Nav/>
+                
+                <Card
+                    image={this.state.image}
+                    handleBtnClick={this.handleBtnClick}
+                    id={this.state.currentIndex}
+                    food={this.state.food}
+                />
                 <div className="choose">
         <form className="form1">
         <br></br>
@@ -130,12 +138,6 @@ class FoodChoice extends Component {
         </form>
         
     </div>
-                <Card
-                    image={this.state.image}
-                    handleBtnClick={this.handleBtnClick}
-                    id={this.state.currentIndex}
-                    food={this.state.food}
-                />
                  
             </Container>
 
