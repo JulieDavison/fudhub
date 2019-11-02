@@ -20,12 +20,14 @@ function Nav() {
               <a className="nav-link" href="/Budget">Create New</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Saved</a>
+              <a className="nav-link" href="/saved">Saved</a>
             </li>
-            
+            <li className="nav-item">
+              <a className="nav-link" href="/" >Logout</a>
+            </li>
           </ul>
           <form className="form-inline my-2 my-lg-0" >
-            <button className="btn btn-outline-success my-2 my-sm-0"  type="submit" style={{color:'#f96167;'}}>Logout</button>
+            
           
         </form>
       </div>

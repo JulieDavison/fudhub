@@ -3,27 +3,14 @@ body {
     padding: 0;
     background: #fce77d;
 }
-.fudhub {
-    background: #fce77d;
-    color: #f96167;
-    text-align: center;
-    border: 10px solid #f96167;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    padding: 10px;
-    margin-left: 44.5%;
-    text-shadow: 2px 2px #fd8589;
-    margin-top: 2%;
-    
-}
+
 
 #top {
     margin-bottom: -23px;
 }
-.loginbox {
-    width: 320px;
-    height: 390px;
+.regbox {
+    width: 360px;
+    height: 580px;
     background: whitesmoke;
     box-shadow: 2px 2px #fd8589;
     color: #f96167;
@@ -42,7 +29,7 @@ body {
 }
 
 
-.loginbox h1 {
+.regbox h1 {
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
@@ -50,19 +37,19 @@ body {
     margin-bottom: 20px;
 }
 
-.loginbox p {
+.regbox p {
     margin: 0;
     padding: 0;
     font-weight: bold;
 }
 
-.loginbox input {
+.regbox input {
     width: 100%;
     margin-bottom: 20px;
 
 }
 
-.loginbox input[type="text"],
+.regbox input[type="text"],
 input[type="password"] {
     border: 1px solid lightgray;
     margin-top: 13px;
@@ -74,7 +61,7 @@ input[type="password"] {
     font-size: 16px;
 }
 
-.loginbox input[type="submit"] {
+.regbox input[type="submit"] {
     border: none;
     outline: none;
     height: 40px;
@@ -85,19 +72,19 @@ input[type="password"] {
     margin-top: 30px;
 }
 
-.loginbox input[type="submit"]:hover {
+.regbox input[type="submit"]:hover {
     cursor: pointer;
     background: #ffc107;
     color: #000;
 }
 
-.loginbox a {
+.regbox a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
     color: darkgray;
 }
 
-.loginbox a:hover {
+.regbox a:hover {
     color: #ffc107;
 }

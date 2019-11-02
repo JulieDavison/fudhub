@@ -3,20 +3,7 @@ body {
     padding: 0;
     background: #fce77d;
 }
-.fudhub {
-    background: #fce77d;
-    color: #f96167;
-    text-align: center;
-    border: 10px solid #f96167;
-    width: 230x;
-    height: 230px;
-    border-radius: 100%;
-    padding: 10px;
-    margin-left: 44.5%;
-    text-shadow: 2px 2px #fd8589;
-    margin-top: 2%;
-    
-}
+
 
 #top {
     margin-bottom: -23px;
@@ -37,7 +24,7 @@ body {
     padding: 20px;
     font-family: 'Raleway', sans-serif;
     border: 1px solid#f96167;
-    margin-top: 8%;
+    margin-top: 4%;
 
 }
 

@@ -12,6 +12,8 @@ class FoodChoice extends Component {
         image: "",
         food: "",
         currentIndex: 0,
+        match: false,
+        matchCount: 0,
         tempArray: Images
 
     };
@@ -40,7 +42,7 @@ class FoodChoice extends Component {
                 this.loadNextFood();
         } 
         else {
-            window.open ('/RecipeResults',"_self",false)
+            window.open ('/YelpResults',"_self",false)
             newState.match = false;
         }
 
