@@ -5,7 +5,7 @@
     color: rgb(247, 247, 247);
 }
 
-.fud{
+.logo1{
     color: #f96167;
     font-size: 30px;
     text-shadow: 2px 2px #fd8589;
@@ -13,7 +13,7 @@
 
     
 }
-.fud:hover{
+.logo1:hover{
     color: rgb(253, 253, 170);;
     text-decoration:none
 }

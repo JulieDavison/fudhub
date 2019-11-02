@@ -6,7 +6,7 @@ function Nav() {
     return (
         <div className="nahv">
         <nav className="navbar navbar-expand-lg navbar-light" style={{background: ' rgb(247, 247, 247)'}}>
-        <a className="navbar-brand" className="fud" href="/">fudhub</a>
+        <a className="navbar-brand" className="logo1" href="/">fudhub</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

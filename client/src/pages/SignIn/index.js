@@ -4,7 +4,7 @@ import "./login.css";
 function SignIn(){
     return (
         <div className="login">
-        <div className="fud">
+        <div className="fudhub">
                 <h1 id="top" style={{fontfamily:'Bungee Inline, cursive;'}}>fud</h1>
                 <h1 id="bot" style={{fontfamily:'Bungee Inline, cursive;'}}>hub</h1>
         </div>

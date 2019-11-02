@@ -4,9 +4,9 @@ import "./home.css";
 function Home() {
     return (
         <div className="home">
-            <div className="fud">
-                    <h1 id="top" style={{fontFamily: 'Bungee Inline, cursive' }}>fud</h1>
-                    <h1 id="bot" style={{fontFamily: 'Bungee Inline, cursive' }}>hub</h1>
+            <div className="fudhub">
+                    <h1 id="top" style={{fontFamily: 'Bungee Inline, cursive', fontSize:100,marginTop: 40}}>fud</h1>
+                    <h1 id="bot" style={{fontFamily: 'Bungee Inline, cursive', fontSize:100}}>hub</h1>
             </div>
             <div className="icons">
                     <img src="/bank.png" alt=""></img>
@@ -16,8 +16,8 @@ function Home() {
             
             
         
-            <div className="start">
-                <p style={{fontfamily: 'Raleway, sans-serif'}}>Get Started</p>
+            <div className="start" style={{width:150, padding: 5}}>
+                <a href="SignIn" style={{fontfamily: 'Raleway, sans-serif', padding: 15, textDecoration:'none', color:'white' ,fontSize:20}}>Get Started</a>
             </div>
       </div>  
     );
