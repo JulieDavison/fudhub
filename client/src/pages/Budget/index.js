@@ -9,7 +9,7 @@ function Budget(){
             <Nav/>
         
             <div className="choose">
-        <form className="form1">
+        <div className="form1">
         <br></br>
         <br></br>
         <h2 style={{fontFamily:'Raleway, sans-serif'}}>Step 1:</h2>
@@ -23,32 +23,17 @@ function Budget(){
         <br></br>
         <p style={{fontFamily:'Raleway, sans-serif'}}>please pick one below</p>
         <br></br>
-        <div className="row">
-            <div className="col-md-6">
-                    <label className="checkedbox" >
-                            <input type="checkbox"></input>
-                            <span className="checkmark" style={{fontFamily:'Raleway, sans-serif'}}>restaurants</span>
-                        </label>
-            </div>
-            <br></br>
-           
-            <br></br>
-            <div className="col-md-6">
-                    <label >
-                            <input type="checkbox"></input>
-                            <span className="checkmark" id="rec" style={{fontFamily:'Raleway, sans-serif'}}></span>
-                            recipes
-                        </label>
-            </div>
-        </div>
+       
         <br></br>
         <div >
-        <input id="search" type="submit" value="Submit" style={{fontFamily:'Raleway, sans-serif', backgroundColor:'turquoise', border:'1px solid turquoise', borderRadius:5, padding: 10, color: 'white'}}></input>
+        
         </div>
-        </form>
+        <a id="search"  href="/restaurantchoice"  style={{fontFamily:'Raleway, sans-serif', backgroundColor:'turquoise', border:'1px solid turquoise', borderRadius:5, padding: 10, color: 'white',textDecoration:'none', margin:10}}>restaurants</a>
+        
+        <a id="search"  href="/recipechoice"  style={{fontFamily:'Raleway, sans-serif', backgroundColor:'turquoise', border:'1px solid turquoise', borderRadius:5, padding: 10, color: 'white',textDecoration:'none',margin:10}}>recipes</a>
+        </div>
         
     </div>
-
         </Container>
         
     );

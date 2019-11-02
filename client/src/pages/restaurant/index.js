@@ -42,7 +42,7 @@ class FoodChoice extends Component {
                 this.loadNextFood();
         } 
         else {
-            window.open ('/RecipeResults',"_self",false)
+            window.open ('/YelpResults',"_self",false)
             newState.match = false;
         }
 

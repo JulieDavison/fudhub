@@ -16,11 +16,11 @@ function Profile() {
                 <div className="b1">
                     
                     <br></br>
-                    <a id="btns" href="/budget" style={{margin: 30}}>search new</a>
+                    <a id="btns" href="/Budget" style={{margin: 30}}>search new</a>
                     <br></br>
                     
                     <br></br>
-                    <a id="btns" style={{margin: 30}}>saved posts</a>
+                    <a id="btns" href="/Saved" style={{margin: 30}}>saved posts</a>
                 </div>
             </div>
 
