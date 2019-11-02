@@ -1,0 +1,28 @@
+.profile {
+    text-align: center;
+    background: whitesmoke;
+    padding: 50px;
+    margin-top: 3%;
+    height: 600px;
+    box-shadow: 5px 5px 5px gray;
+    margin-left: 27%;
+    width: 500px;
+}
+
+#btns{
+    
+    background: turquoise;
+    border: 1px solid turquoise;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 5px 5px 7px gray;
+    text-decoration: none;
+}
+
+#btns:hover{
+    background-color: rgb(226, 118, 118);
+    color: white;
+    border: 1px solid  rgb(226, 118, 118);
+    text-decoration: none;
+}
