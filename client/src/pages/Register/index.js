@@ -14,17 +14,17 @@ function Register() {
             <h1>Register Now!</h1>
             <form action="">
                 <p>
-                    <img src="/images/user.png" style={{height:'12px',width:'12px', marginright:'5px'}}></img>E-mail</p>
+                    <img src="/images/user.png" alt="username" style={{height:'12px',width:'12px', marginright:'5px'}}></img>E-mail</p>
                 <input type="text" name="" placeholder="Enter E-mail" id="email"></input>
 
                 <p>
-                    <img src="/images/pass.ico" style={{height:'12px',width:'12px;'}}></img>
+                    <img src="/images/pass.ico" alt="password" style={{height:'12px',width:'12px;'}}></img>
                     Password</p>
                 <p class="help-block" style={{fontsize:'10px;'}}>(Password should be at least 6 characters)</p>
                 <input type="password" name="" placeholder="Enter Password" id="password"></input>
 
                 <p>
-                    <img src="/images/pass.ico" style={{height:'12px',width:'12px;'}}></img>
+                    <img src="/images/pass.ico" alt="confirm" style={{height:'12px',width:'12px;'}}></img>
                     Confirm Password</p>
                 <input type="password" name="" placeholder="Confirm Password" id="password"></input>
                 <input type="submit" name="" value="Login" id="submit"></input>
