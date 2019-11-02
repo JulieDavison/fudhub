@@ -1,8 +1,11 @@
 import React from "react";
+require("dotenv").config();
+
+
 
 class Yelp extends Component {
     runAPI() {
-        const apiKey = 'irL2GGG0IDmOVFbUZFGbjGqbDpxxXM15N7HzW0g2xqLkKjGRTi5-g038R1H-_gi7DaIXEZvyV7Eo6HIR0ZVoQPPqEs_zX6aF3FC-bsmtqvUeQkFJY3xgjBS0sKG0XXYx';
+        const apiKey = process.env.yelpAPI;
         const searchRequest = {
             term: "burger",
             location: "orange county",
