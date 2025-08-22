@@ -94,6 +94,7 @@ class RecipeResults extends Component {
 
         <a href="/saved" style={{fontFamily:'Raleway, sans-serif', backgroundColor:'turquoise', border:'1px solid turquoise', borderRadius:5, padding: 10, color: 'white',textDecoration:'none',margin:10}}>save</a>
         </div>
+      </Container>
 
 
     );
