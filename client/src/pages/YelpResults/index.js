@@ -4,12 +4,10 @@ import Nav from "../../components/Nav";
 import "./yelp.css"
 require("dotenv").config();
 
-'use strict';
-
 const yelp = require('yelp-fusion');
 
 
-class Yelp extends Component {
+class YelpResults extends Component {
     runAPI() {
         const apiKey = process.env.yelpAPI;
         const searchRequest = {
@@ -29,7 +27,6 @@ class Yelp extends Component {
     }
     render() {
         return (
-               return (
         <Container>
             <Nav />
             <div className="bg2">
